@@ -1,0 +1,30 @@
+{
+  "name": "react-devtools-extension",
+  "version": "1.0.0",
+  "description": "[React Developer Tools](https://github.com/facebook/react-devtools/tree/v3)\r `$ git checkout v3`",
+  "main": "index.js",
+  "scripts": {
+    "b": "node ./shells/chrome/build",
+    "build": "node ./shells/chrome/build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JacobHsu/react-devtools-extension.git"
+  },
+  "author": "Jacob Hsu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JacobHsu/react-devtools-extension/issues"
+  },
+  "homepage": "https://github.com/JacobHsu/react-devtools-extension#readme",
+  "devDependencies": {
+    "chalk": "^3.0.0"
+  },
+  "dependencies": {
+    "adm-zip": "^0.4.13",
+    "child-process-promise": "^2.2.1",
+    "cli-spinners": "^2.2.0",
+    "fs-extra": "^8.1.0",
+    "log-update": "^3.3.0"
+  }
+}

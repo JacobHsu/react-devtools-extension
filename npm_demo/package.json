@@ -1,0 +1,16 @@
+{
+  "name": "npm_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cli-spinners": "^2.2.0",
+    "log-update": "^3.3.0"
+  }
+}
