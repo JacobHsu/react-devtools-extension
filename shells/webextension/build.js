@@ -12,9 +12,9 @@ const {join, relative} = require('path');
 // to produce the final web extension
 const STATIC_FILES = [
     'icons',
-    //'popups',
-    //'main.html',
-    //'panel.html',
+    'popups',
+    'main.html',
+    'panel.html',
 ];
 
 const relativePath = path => relative(process.cwd(), path);
@@ -46,14 +46,14 @@ const preProcess = async (destinationPath, tempPath) => {
 };
 
 const build = async(tempPath, manifestPath) => {
-    //const binPath = join(tempPath, 'bin');
+    const binPath = join(tempPath, 'bin');
     const zipPath = join(tempPath, 'zip');
   
-    // const webpackPath = join(__dirname, '..', '..', 'node_modules', '.bin', 'webpack');
-    // await exec(
-    //   `${webpackPath} --config webpack.config.js --output-path ${binPath}`,
-    //   {cwd: __dirname, env: Object.assign({}, process.env, {NODE_ENV: 'production'})}
-    // );
+    const webpackPath = join(__dirname, '..', '..', 'node_modules', '.bin', 'webpack');
+    await exec(
+      `${webpackPath} --config webpack.config.js --output-path ${binPath}`,
+      {cwd: __dirname, env: Object.assign({}, process.env, {NODE_ENV: 'production'})}
+    );
     // await exec(
     //   `${webpackPath} --config webpack.backend.js --output-path ${binPath}`,
     //    {cwd: __dirname, env: Object.assign({}, process.env, {NODE_ENV: 'production'})}

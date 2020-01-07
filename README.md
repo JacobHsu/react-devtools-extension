@@ -11,6 +11,12 @@
 `npm i child-process-promise`
 `npm i adm-zip`
 
+## webpack.config.js
+
+`npm i webpack`
+`npm i @babel/plugin-transform-flow-strip-types @babel/plugin-proposal-class-properties`
+`npm i @babel/preset-env @babel/preset-react @babel/preset-flow`
+
 ## References
 
 [#!/usr/bin/env node 到底是什麼？](https://juejin.im/post/5cb93cd651882578b148c637)
