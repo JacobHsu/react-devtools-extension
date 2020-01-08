@@ -63,7 +63,7 @@ const build = async(tempPath, manifestPath) => {
     await ensureDir(zipPath);
   
     // Copy unbuilt source files to zip dir to be packaged:
-    //await copy(binPath, join(zipPath, 'build'));
+    await copy(binPath, join(zipPath, 'build'));
     await copy(manifestPath, join(zipPath, 'manifest.json'));
     await Promise.all(
       STATIC_FILES.map(file => copy(join(__dirname, file), join(zipPath, file)))
@@ -89,7 +89,7 @@ const postProcess = async (tempPath, destinationPath) => {
 const main = async (buildId, manifestPath, destinationPath) => {
     try {
       const tempPath = join(__dirname, 'build', buildId);
-      console.log('tempPath',destinationPath, tempPath)
+
       await logPromise(
         preProcess(destinationPath, tempPath),
         'Preparing build'

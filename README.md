@@ -13,9 +13,12 @@
 
 ## webpack.config.js
 
-`npm i webpack`
+`yarn add webpack webpack-cli`
 `npm i @babel/plugin-transform-flow-strip-types @babel/plugin-proposal-class-properties`
-`npm i @babel/preset-env @babel/preset-react @babel/preset-flow`
+`yarn add @babel/core @babel/preset-env @babel/preset-react @babel/preset-flow`
+
+module loader
+`yarn add babel-loader style-loader css-loader`
 
 ## References
 

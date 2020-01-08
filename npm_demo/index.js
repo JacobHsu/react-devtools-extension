@@ -1,6 +1,9 @@
 const cliSpinners = require('cli-spinners');
 const {dots} = require('cli-spinners');
 const logUpdate = require('log-update');
+var nullthrows = require('nullthrows').default;
+
+console.log( nullthrows(123) )
  
 console.log(cliSpinners.dots);
 /*
