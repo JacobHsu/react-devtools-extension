@@ -5,6 +5,10 @@
 
 `yarn add chalk -D`
 
+## Docs
+
+[Extending DevTools](https://developer.chrome.com/extensions/devtools)
+
 ## webextension/build.js
 
 `npm i cli-spinners log-update fs-extra`
@@ -19,6 +23,14 @@
 
 module loader
 `yarn add babel-loader style-loader css-loader`
+
+## shells\webextension\src\main.js
+
+`chrome.devtools.panels.create('React', '', 'panel.html'`
+
+## Docs
+
+[ReactDOM.unmountComponentAtNode](http://react.html.cn/docs/react-dom.html#unmountcomponentatnode) panel.js
 
 ## References
 
