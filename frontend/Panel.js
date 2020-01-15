@@ -1,5 +1,7 @@
 'use strict';
 
+/* globals chrome */
+
 const React = require('react');
 const {sansSerif} = require('./Themes/Fonts');
 const Themes = require('./Themes/Themes');
@@ -12,6 +14,16 @@ class Panel extends React.Component {
           showTroubleshooting: false,
         };
     }
+
+    componentDidMount() {
+      //if (this.state.loading) {
+        this._troubleshootingTimeout = setTimeout(
+          () => this.setState({showTroubleshooting: true}),
+          3000
+        );
+      //}
+    }
+
     render() {
         var theme = Themes.ChromeDefault;
         return (

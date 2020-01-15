@@ -28,6 +28,12 @@ module loader
 
 `chrome.devtools.panels.create('React', '', 'panel.html'`
 
+### frontend\Panel.js
+
+`yarn add react react-dom`
+
+stdout: Module not found: Error: Can\'t resolve \'react-dom\
+
 ## Docs
 
 [ReactDOM.unmountComponentAtNode](http://react.html.cn/docs/react-dom.html#unmountcomponentatnode) panel.js

@@ -32,9 +32,9 @@ function createPanelIfReactLoaded() {
       panel.onShown.addListener(function(window) {
         // when the user switches to the panel, check for an elements tab
         // selection
-        window.panel.getNewSelection();
+        // window.panel.getNewSelection(); //Panel.js 
         reactPanel = window.panel;
-        reactPanel.resumeTransfer();
+        // reactPanel.resumeTransfer(); //Panel.js 
       });
       panel.onHidden.addListener(function() {
         if (reactPanel) {

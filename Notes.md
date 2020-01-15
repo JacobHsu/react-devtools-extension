@@ -10,6 +10,11 @@ setIconAndPopup
 
 chrome.runtime.onMessage.addListener
 
+## frontend\Panel.js
+
+`/* globals chrome */`
+chrome.tabs.create
+
 ### Detecting When DevTools Opens and Closes
 
 port.onDisconnect.addListener
